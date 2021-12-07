@@ -11,7 +11,6 @@ import SettingsIcon from "@material-ui/icons/Settings";
 import MesheryAdapterPlayComponent from "./MesheryAdapterPlayComponent";
 
 const styles = (theme) => ({
-  icon : { fontSize : 20, },
   root : { padding : theme.spacing(0),
     marginBottom : theme.spacing(2), },
   buttons : { display : "flex",
@@ -152,8 +151,7 @@ class MesheryPlayComponent extends React.Component {
         <NoSsr>
           <React.Fragment>
             <div className={classes.alreadyConfigured}>
-              <Button variant="contained" color="primary" size="large" onClick={this.handleConfigure}>
-                <SettingsIcon className={classes.icon} />
+              <Button variant="contained" color="primary" size="large" onClick={this.handleConfigure} startIcon={<SettingsIcon/>}>
                 Configure Settings
               </Button>
             </div>
